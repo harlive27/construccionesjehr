@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEHR Ingeniería Civil</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #1e1e1e;
+        }
+        header {
+            background-color: #0a1d44;
+            color: white;
+            padding: 1.5em;
+            text-align: center;
+        }
+        nav {
+            background-color: #132c5e;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2em;
+        }
+        .hero {
+            background-color: #e0e6f0;
+            text-align: center;
+            padding: 4em 2em;
+        }
+        .services, .projects, .contact {
+            background-color: white;
+            margin: 2em 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #0a1d44;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        h2 {
+            color: #0a1d44;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-top: 1em;
+        }
+        ul {
+            padding-left: 1.2em;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1em;
+            margin-top: 1em;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        form {
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+        input, textarea {
+            padding: 0.8em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        button {
+            background-color: #0a1d44;
+            color: white;
+            border: none;
+            padding: 0.8em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0d2a70;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JEHR Ingeniería Civil</h1>
+        <p>Soluciones estructurales con precisión y compromiso</p>
+    </header>
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section class="hero">
+        <h2>Bienvenido a nuestro despacho</h2>
+        <p>Diseñamos, proyectamos y construimos con excelencia técnica</p>
+        <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4c92a4?auto=format&fit=crop&w=1200&q=80" alt="Imagen de ingeniería civil">
+    </section>
+    <section class="services" id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Planos arquitectónicos</li>
+            <li>Planos estructurales</li>
+            <li>Instalaciones eléctricas e hidráulicas</li>
+            <li>Renders realistas</li>
+            <li>Supervisión de obra</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1200&q=80" alt="Servicios de ingeniería">
+    </section>
+    <section class="projects" id="proyectos">
+        <h2>Proyectos recientes</h2>
+        <p>Explora algunos de nuestros trabajos más destacados:</p>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1600370941882-b1aa46f1cb0e?auto=format&fit=crop&w=1200&q=80" alt="Proyecto 1">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80" alt="Proyecto 2">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Proyecto 3">
+        </div>
+    </section>
+    <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Quieres cotizar un proyecto o tienes dudas?</p>
+        <p>Email: contacto@jehringenieria.com</p>
+        <p>WhatsApp: +52 55 1234 5678</p>
+        <form action="mailto:contacto@jehringenieria.com" method="POST" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Oficina de contacto">
+    </section>
+    <footer>
+        <p>&copy; 2025 JEHR Ingeniería Civil. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
